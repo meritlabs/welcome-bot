@@ -7,9 +7,11 @@
   "author": "Vladimir Gutorov <vlgutv@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "npm run build:ts && npm run run:server",
+    "start": "npm run prepare && npm run build:ts && npm run run:server",
+    "start:dev": "npm run build:ts && npm run run:server",
     "run:server": "node ./dist/index.js",
-    "build:ts": "./node_modules/.bin/tsc"
+    "build:ts": "./node_modules/.bin/tsc",
+    "prepare": "cp ./src/common/env/config.example.ts ./src/common/env/config.ts"
   },
   "dependencies": {
     "@types/node": "^10.5.5",

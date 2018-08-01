@@ -61,3 +61,4 @@ typings/
 .next
 
 dist
+src/common/env/config.ts
