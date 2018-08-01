@@ -1,0 +1,9 @@
+{
+  "name": "welcome-bot",
+  "version": "1.0.0",
+  "description": "Welcome messages bot",
+  "main": "index.js",
+  "repository": "git@github.com:meritlabs/welcome-bot.git",
+  "author": "Vladimir Gutorov <vlgutv@gmail.com>",
+  "license": "MIT"
+}
