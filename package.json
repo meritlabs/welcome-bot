@@ -16,6 +16,7 @@
   "dependencies": {
     "@types/node": "^10.5.5",
     "discord.js": "^11.3.2",
+    "node-telegram-bot-api": "^0.30.0",
     "telegraf": "^3.22.1",
     "typescript": "^3.0.1"
   }

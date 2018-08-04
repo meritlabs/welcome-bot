@@ -1,5 +1,5 @@
 export default function generateWelcomeMessage(author) {
-  let message = `Hi *${author.username}*!  Welcome to Merit!\n
+  let message = `Hi *${author}*!  Welcome to Merit!\n
   To help you get started, we’ve assembled some resources for you.\n
   Some basics:\n
   1. Merit is an invite only community, someone must send you an invite token in order to unlock your wallet and validate it on the Merit blockchain before you can send, 
