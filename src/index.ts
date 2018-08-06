@@ -1,14 +1,24 @@
+import * as express from 'express';
+import * as http from 'http';
 import * as Discord from 'discord.js';
 import * as discordService from './common/services/discord.service';
 import generateWelcomeMessage from './common/services/messages.service';
 
 const config = require('./common/env/config');
+const PORT = process.env.PORT || config.ENV.PORT;
 const CHANNEL = process.env.CHANNEL || config.ENV.CHANNEL;
 const DISCORD_BOT_TOKEN = process.env.DISCORD_BOT_TOKEN || config.ENV.DISCORD_BOT_TOKEN;
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || config.ENV.TELEGRAM_BOT_TOKEN;
+const app = express();
+const server = http.createServer(app);
 const TelegramBot = require('node-telegram-bot-api');
 const TGbot = new TelegramBot(TELEGRAM_BOT_TOKEN, { polling: true });
 const discordBot = new Discord.Client();
+
+//run server
+server.listen(PORT, () => {
+  console.log(`Server started on port ${(server.address() as any).port}`);
+});
 
 TGbot.on('message', async msg => {
   let getMsg = new Promise(res => {
