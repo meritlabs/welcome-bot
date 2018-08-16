@@ -33,7 +33,7 @@ TGbot.on('message', async msg => {
   if (newChatMember) {
     let user = `@`;
     if (newChatMember.first_name) user += newChatMember.first_name;
-    if (newChatMember.last_name) user += newChatMember.last_name;
+    if (newChatMember.last_name) user += ` ${newChatMember.last_name}`;
 
     let message = generateWelcomeMessage(user);
 
