@@ -62,4 +62,3 @@ typings/
 
 dist
 src/common/env/config.ts
-package-lock.json
