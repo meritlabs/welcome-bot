@@ -28,7 +28,7 @@ This project and everyone participating in it is governed by the [Code of Conduc
 
 # What do I need to know to help?
 
-If you are looking to help to with a code contribution our project uses JavaScript for the backend part and TypeScript for the frontend along with Ionic and Angular frameworks. If you don't feel ready to make a code contribution yet, no problem! You can also check out the documentation issues or the design issues.
+If you are looking to help to with a code contribution our project uses TypeScript. If you don't feel ready to make a code contribution yet, no problem! You can also check out the documentation issues or the design issues.
 
 ## How do I make a contribution?
 
