@@ -37,4 +37,4 @@ Please, check out our [Contribution guide](./CONTRIBUTING.md) and [Code of Condu
 
 **Code released under [the MIT license](./LICENSE).**
 
-Copyright (C) 2017 - 2020 the Merit Foundation.
+Copyright (C) 2017 - 2021 the Merit Foundation.
